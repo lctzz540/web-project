@@ -9,7 +9,7 @@ const projectsData = [
     title: 'Nutrition App',
     description: `Calculating servings according to individual needs for each specific person`,
     imgSrc: '/static/images/nutrition.jpeg',
-    href: '/blog/the-time-machine',
+    href: '/projects/nutrition',
   },
 ]
 
