@@ -8,11 +8,13 @@ export default function Nutrition() {
   const [height, setHeight] = useState('')
   const [activityLevel, setActivityLevel] = useState(1.2)
   const [calories, setCalories] = useState('')
+  const [bmi, setBmi] = useState()
 
   const calculateCalories = () => {
     const bmr = 10 * weight + 6.25 * height - 5 * age + 5
     const tdee = bmr * activityLevel
     setCalories(tdee.toFixed(0))
+    setBmi(Math.round(weight / (height / 100) ** 2))
   }
   return (
     <>
@@ -95,7 +97,7 @@ export default function Nutrition() {
               </div>
               {calories && (
                 <div className="text-lg font-medium text-indigo-700">
-                  Daily Calorie Needs: {calories} kcal
+                  <div>Your BMI: {bmi}</div> Daily Calorie Needs: {calories} kcal
                 </div>
               )}
             </div>
