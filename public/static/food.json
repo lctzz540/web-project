@@ -1,0 +1,904 @@
+{
+  "Sheet1": [
+    {
+      "STT": 1,
+      "Thức Ăn": "Bánh bao nhân cadé",
+      "Năng lượng (Kcal/ 100g)": 209,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 2,
+      "Thức Ăn": "Bánh bao nhân thịt",
+      "Năng lượng (Kcal/ 100g)": 348,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 3,
+      "Thức Ăn": "Bánh bèo",
+      "Năng lượng (Kcal/ 100g)": 400,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 4,
+      "Thức Ăn": "Bánh bía",
+      "Năng lượng (Kcal/ 100g)": 300,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 5,
+      "Thức Ăn": "Bánh bò nướng",
+      "Năng lượng (Kcal/ 100g)": 110,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 6,
+      "Thức Ăn": "Bánh bông lan",
+      "Năng lượng (Kcal/ 100g)": 297,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 7,
+      "Thức Ăn": "Bánh bột lọc",
+      "Năng lượng (Kcal/ 100g)": 480,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 8,
+      "Thức Ăn": "Bánh canh",
+      "Năng lượng (Kcal/ 100g)": 109,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 9,
+      "Thức Ăn": "Bánh chưng",
+      "Năng lượng (Kcal/ 100g)": 181,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 10,
+      "Thức Ăn": "Bánh chuối hấp",
+      "Năng lượng (Kcal/ 100g)": 225,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 11,
+      "Thức Ăn": "Bánh chuối chiên",
+      "Năng lượng (Kcal/ 100g)": 425,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 12,
+      "Thức Ăn": "Bánh cuốn nhân thịt mộc",
+      "Năng lượng (Kcal/ 100g)": 213,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 13,
+      "Thức Ăn": "Bánh da lợn",
+      "Năng lượng (Kcal/ 100g)": 1024,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 14,
+      "Thức Ăn": "Bánh Flan",
+      "Năng lượng (Kcal/ 100g)": 147,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 15,
+      "Thức Ăn": "Bánh giò",
+      "Năng lượng (Kcal/ 100g)": 293,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 16,
+      "Thức Ăn": "Bánh khoai mì nướng",
+      "Năng lượng (Kcal/ 100g)": 234,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 17,
+      "Thức Ăn": "Bánh mì ổ",
+      "Năng lượng (Kcal/ 100g)": 265,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 18,
+      "Thức Ăn": "Bánh mì sandwich",
+      "Năng lượng (Kcal/ 100g)": 275,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 19,
+      "Thức Ăn": "Bánh quy bơ (biscuit)",
+      "Năng lượng (Kcal/ 100g)": 467,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 20,
+      "Thức Ăn": "Bánh su kem",
+      "Năng lượng (Kcal/ 100g)": 334,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 21,
+      "Thức Ăn": "Bánh sừng bò",
+      "Năng lượng (Kcal/ 100g)": 406,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 22,
+      "Thức Ăn": "Bánh tét nhân đậu ngọt",
+      "Năng lượng (Kcal/ 100g)": 440,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 23,
+      "Thức Ăn": "Bánh tiêu",
+      "Năng lượng (Kcal/ 100g)": 264,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 24,
+      "Thức Ăn": "Bánh ướt không nhân",
+      "Năng lượng (Kcal/ 100g)": 217,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 25,
+      "Thức Ăn": "Bánh xèo",
+      "Năng lượng (Kcal/ 100g)": 140,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 26,
+      "Thức Ăn": "Bắp luộc",
+      "Năng lượng (Kcal/ 100g)": 86,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 27,
+      "Thức Ăn": "Bắp nướng",
+      "Năng lượng (Kcal/ 100g)": 177,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 28,
+      "Thức Ăn": "Bắp xào",
+      "Năng lượng (Kcal/ 100g)": 436,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 29,
+      "Thức Ăn": "Quả bơ",
+      "Năng lượng (Kcal/ 100g)": 160,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 30,
+      "Thức Ăn": "Bột chiên",
+      "Năng lượng (Kcal/ 100g)": 400,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 31,
+      "Thức Ăn": "Bún bò huế",
+      "Năng lượng (Kcal/ 100g)": 637,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 32,
+      "Thức Ăn": "Bún riêu cua",
+      "Năng lượng (Kcal/ 100g)": 482,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 33,
+      "Thức Ăn": "Bún riêu ốc",
+      "Năng lượng (Kcal/ 100g)": 531,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 34,
+      "Thức Ăn": "Bún thịt nướng",
+      "Năng lượng (Kcal/ 100g)": 451,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 35,
+      "Thức Ăn": "Bún xào",
+      "Năng lượng (Kcal/ 100g)": 440,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 36,
+      "Thức Ăn": "Bưởi",
+      "Năng lượng (Kcal/ 100g)": 38,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 37,
+      "Thức Ăn": "Cá",
+      "Năng lượng (Kcal/ 100g)": 206,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 38,
+      "Thức Ăn": "Cam",
+      "Năng lượng (Kcal/ 100g)": 47,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 39,
+      "Thức Ăn": "Chả giò chiên",
+      "Năng lượng (Kcal/ 100g)": 600,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 40,
+      "Thức Ăn": "Chả lụa",
+      "Năng lượng (Kcal/ 100g)": 136,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 41,
+      "Thức Ăn": "Chè thập cẩm",
+      "Năng lượng (Kcal/ 100g)": 500,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 42,
+      "Thức Ăn": "Chôm chôm",
+      "Năng lượng (Kcal/ 100g)": 75,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 43,
+      "Thức Ăn": "Chuối",
+      "Năng lượng (Kcal/ 100g)": 89,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 44,
+      "Thức Ăn": "Cơm gạo lức",
+      "Năng lượng (Kcal/ 100g)": 110,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 45,
+      "Thức Ăn": "Cơm trắng",
+      "Năng lượng (Kcal/ 100g)": 130,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 46,
+      "Thức Ăn": "Đậu hủ",
+      "Năng lượng (Kcal/ 100g)": 76,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 47,
+      "Thức Ăn": "Đậu phộng",
+      "Năng lượng (Kcal/ 100g)": 567,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 48,
+      "Thức Ăn": "Đu đủ",
+      "Năng lượng (Kcal/ 100g)": 43,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 49,
+      "Thức Ăn": "Dưa hấu",
+      "Năng lượng (Kcal/ 100g)": 30,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 50,
+      "Thức Ăn": "Đùi gà chiên",
+      "Năng lượng (Kcal/ 100g)": 162,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 51,
+      "Thức Ăn": "Gà luộc",
+      "Năng lượng (Kcal/ 100g)": 197,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 52,
+      "Thức Ăn": "Hoành thánh",
+      "Năng lượng (Kcal/ 100g)": 370,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 53,
+      "Thức Ăn": "Hột vịt lộn",
+      "Năng lượng (Kcal/ 100g)": 182,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 54,
+      "Thức Ăn": "Hủ tíu mì",
+      "Năng lượng (Kcal/ 100g)": 410,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 55,
+      "Thức Ăn": "Khổ qua",
+      "Năng lượng (Kcal/ 100g)": 20,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 56,
+      "Thức Ăn": "Khoai lang luộc",
+      "Năng lượng (Kcal/ 100g)": 86,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 57,
+      "Thức Ăn": "Khoai lang chiên",
+      "Năng lượng (Kcal/ 100g)": 325,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 58,
+      "Thức Ăn": "Khoai mì luộc",
+      "Năng lượng (Kcal/ 100g)": 112,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 59,
+      "Thức Ăn": "Khoai tây",
+      "Năng lượng (Kcal/ 100g)": 77,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 60,
+      "Thức Ăn": "Lạp xưởng chiên",
+      "Năng lượng (Kcal/ 100g)": 356,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 61,
+      "Thức Ăn": "Lê",
+      "Năng lượng (Kcal/ 100g)": 57,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 62,
+      "Thức Ăn": "Mận đỏ",
+      "Năng lượng (Kcal/ 100g)": 40,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 63,
+      "Thức Ăn": "Mãng cầu",
+      "Năng lượng (Kcal/ 100g)": 94,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 64,
+      "Thức Ăn": "Măng cụt",
+      "Năng lượng (Kcal/ 100g)": 73,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 65,
+      "Thức Ăn": "Mì sợi",
+      "Năng lượng (Kcal/ 100g)": 138,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 66,
+      "Thức Ăn": "Miến",
+      "Năng lượng (Kcal/ 100g)": 351,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 67,
+      "Thức Ăn": "Mít",
+      "Năng lượng (Kcal/ 100g)": 96,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 68,
+      "Thức Ăn": "Mít sấy",
+      "Năng lượng (Kcal/ 100g)": 282,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 69,
+      "Thức Ăn": "Mực",
+      "Năng lượng (Kcal/ 100g)": 92,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 70,
+      "Thức Ăn": "Nấm rơm",
+      "Năng lượng (Kcal/ 100g)": 31,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 71,
+      "Thức Ăn": "Nhãn",
+      "Năng lượng (Kcal/ 100g)": 48,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 72,
+      "Thức Ăn": "Nho khô",
+      "Năng lượng (Kcal/ 100g)": 299,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 73,
+      "Thức Ăn": "Nho",
+      "Năng lượng (Kcal/ 100g)": 67,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 74,
+      "Thức Ăn": "Nui",
+      "Năng lượng (Kcal/ 100g)": 131,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 75,
+      "Thức Ăn": "Ổi",
+      "Năng lượng (Kcal/ 100g)": 68,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 76,
+      "Thức Ăn": "Phở bò chín",
+      "Năng lượng (Kcal/ 100g)": 456,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 77,
+      "Thức Ăn": "Phở bò tái",
+      "Năng lượng (Kcal/ 100g)": 431,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 78,
+      "Thức Ăn": "Phở bò viên",
+      "Năng lượng (Kcal/ 100g)": 431,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 79,
+      "Thức Ăn": "Phở gà",
+      "Năng lượng (Kcal/ 100g)": 483,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 80,
+      "Thức Ăn": "Quýt",
+      "Năng lượng (Kcal/ 100g)": 53,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 81,
+      "Thức Ăn": "Sầu riêng",
+      "Năng lượng (Kcal/ 100g)": 147,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 82,
+      "Thức Ăn": "Táo",
+      "Năng lượng (Kcal/ 100g)": 52,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 83,
+      "Thức Ăn": "Tép rang",
+      "Năng lượng (Kcal/ 100g)": 244,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 84,
+      "Thức Ăn": "Thanh long",
+      "Năng lượng (Kcal/ 100g)": 60,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 85,
+      "Thức Ăn": "Thịt bò xào",
+      "Năng lượng (Kcal/ 100g)": 400,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 86,
+      "Thức Ăn": "Thịt heo kho",
+      "Năng lượng (Kcal/ 100g)": 167,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 87,
+      "Thức Ăn": "Thơm",
+      "Năng lượng (Kcal/ 100g)": 50,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 88,
+      "Thức Ăn": "Tôm luộc",
+      "Năng lượng (Kcal/ 100g)": 92,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 89,
+      "Thức Ăn": "Trái dừa tươi",
+      "Năng lượng (Kcal/ 100g)": 18,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 90,
+      "Thức Ăn": "Trứng cút",
+      "Năng lượng (Kcal/ 100g)": 159,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 91,
+      "Thức Ăn": "Trứng gà",
+      "Năng lượng (Kcal/ 100g)": 155,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 92,
+      "Thức Ăn": "Trứng vịt bắc thảo",
+      "Năng lượng (Kcal/ 100g)": 183,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 93,
+      "Thức Ăn": "Trứng vịt luộc",
+      "Năng lượng (Kcal/ 100g)": 154,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 94,
+      "Thức Ăn": "Xíu mại",
+      "Năng lượng (Kcal/ 100g)": 242,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 95,
+      "Thức Ăn": "Xoài",
+      "Năng lượng (Kcal/ 100g)": 60,
+      "Bữa sáng": 0,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 1
+    },
+    {
+      "STT": 96,
+      "Thức Ăn": "Xôi trắng",
+      "Năng lượng (Kcal/ 100g)": 300,
+      "Bữa sáng": 1,
+      "Bữa trưa": 0,
+      "Bữa tối": 0,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 97,
+      "Thức Ăn": "Bún tươi",
+      "Năng lượng (Kcal/ 100g)": 110,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 98,
+      "Thức Ăn": "Sườn nướng",
+      "Năng lượng (Kcal/ 100g)": 350,
+      "Bữa sáng": 1,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 99,
+      "Thức Ăn": "Thịt heo mỡ",
+      "Năng lượng (Kcal/ 100g)": 394,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    },
+    {
+      "STT": 100,
+      "Thức Ăn": "Thịt ếch",
+      "Năng lượng (Kcal/ 100g)": 90,
+      "Bữa sáng": 0,
+      "Bữa trưa": 1,
+      "Bữa tối": 1,
+      "Ăn vặt": 0
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 import { useRouter } from 'next/router'
 import exercisesData from '@/data/exercisesData'
 import { useEffect, useState } from 'react'
-import Webcam from 'react-webcam'
+import WebcamCapture from '@/components/WebcamCapture'
 
 export default function ExercisePreview() {
   const router = useRouter()
@@ -58,7 +58,7 @@ export default function ExercisePreview() {
               </>
             ) : (
               <>
-                <Webcam />
+                <WebcamCapture />
               </>
             )}
           </div>
