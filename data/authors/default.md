@@ -1,6 +1,7 @@
 ---
-name: Nguyễn Minh Quân
-avatar: /static/images/Quân.jpg
+name: Quân & Nhi
+avatar1: /static/images/Quân.jpg
+avatar2: /static/images/Nhi.jpg
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
