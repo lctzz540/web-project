@@ -1,6 +1,8 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import foodData from '../../../data/food.json'
+import useMealPlanner from '../../../hooks/useMealPlanner'
 
 export default function Nutrition() {
   const [age, setAge] = useState('')
@@ -16,6 +18,7 @@ export default function Nutrition() {
     setCalories(tdee.toFixed(0))
     setBmi(Math.round(weight / (height / 100) ** 2))
   }
+  console.log(useMealPlanner(foodData.food, calories))
   return (
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
