@@ -1,8 +1,9 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import foodData from '../../../data/food.json'
 import useMealPlanner from '../../../hooks/useMealPlanner'
+import MealPlan from '@/components/MealPlan'
 
 export default function Nutrition() {
   const [age, setAge] = useState('')
@@ -18,7 +19,8 @@ export default function Nutrition() {
     setCalories(tdee.toFixed(0))
     setBmi(Math.round(weight / (height / 100) ** 2))
   }
-  console.log(useMealPlanner(foodData.food, calories))
+  const mealplan = useMealPlanner(foodData.food, calories)
+  console.log(mealplan)
   return (
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
@@ -99,8 +101,14 @@ export default function Nutrition() {
                 </button>
               </div>
               {calories && (
-                <div className="text-lg font-medium text-indigo-700">
-                  <div>Your BMI: {bmi}</div> Daily Calorie Needs: {calories} kcal
+                <div className="flex">
+                  <div className="pr-20 text-lg font-medium text-indigo-700">
+                    <div>Your BMI: {bmi}</div> Daily Calorie Needs: {calories} kcal
+                  </div>
+                  <div className="pr-20 text-lg font-medium text-indigo-700">
+                    <MealPlan mealPlan={mealplan.mealPlan} />
+                    <h3 className="text-lg font-semibold">Total Kcal: {mealplan.totalKcal}</h3>
+                  </div>
                 </div>
               )}
             </div>

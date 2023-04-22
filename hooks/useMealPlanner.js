@@ -41,10 +41,10 @@ function useMealPlanner(foodData, dailyKcal) {
 
     // Set the meal plan and total kcal
     setMealPlan({
-      'bữa sáng': [breakfast],
-      'bữa trưa': [lunch],
-      'bữa tối': [dinner],
-      'ăn vặt': snack,
+      breakfast: breakfast['Thức Ăn'],
+      lunch: lunch['Thức Ăn'],
+      dinner: dinner['Thức Ăn'],
+      snacks: snack,
     })
     setTotalKcal(
       breakfast['Năng lượng (Kcal/ 100g)'] +
