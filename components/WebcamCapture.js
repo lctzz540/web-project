@@ -96,12 +96,12 @@ export default function WebcamVideo() {
       {capturing ? (
         <>
           <StopButton onClick={handleStopCaptureClick}>Stop Capture</StopButton>
-          <ClockText>{recordTime}s</ClockText>
+          <div>{recordTime}s</div>
         </>
       ) : (
         <RecordButton onClick={handleStartCaptureClick}>Start Capture</RecordButton>
       )}
-      {recordedChunks.length > 0 && (
+      {recordedChunks.length > 0 && !capturing && (
         <DownloadButton onClick={handleDownload}>Download</DownloadButton>
       )}
     </div>
