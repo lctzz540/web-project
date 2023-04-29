@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { Pose } from '@mediapipe/pose'
 import Webcam from 'react-webcam'
 import tw from 'tailwind-styled-components'
 
@@ -24,6 +25,16 @@ export default function WebcamVideo() {
   const [capturing, setCapturing] = useState(false)
   const [recordedChunks, setRecordedChunks] = useState([])
   const [recordTime, setRecordTime] = useState(0)
+  const [pose, setPose] = useState(null)
+  const poseRef = useRef(null)
+
+  const onPoseDetection = (results) => {
+    const landmarks = results.poseLandmarks
+
+    if (landmarks) {
+      setPose(landmarks)
+    }
+  }
 
   const handleDataAvailable = useCallback(({ data }) => {
     if (data.size > 0) {
@@ -84,6 +95,39 @@ export default function WebcamVideo() {
     facingMode: 'user',
   }
 
+  useEffect(() => {
+    const poseInstance = new Pose({
+      locateFile: (file) => {
+        return `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`
+      },
+    })
+    poseInstance.setOptions({
+      modelComplexity: 1,
+      smoothLandmarks: true,
+      minDetectionConfidence: 0.5,
+      minTrackingConfidence: 0.5,
+    })
+    poseInstance.onResults(onPoseDetection)
+    poseInstance.onResults((results) => {
+      poseRef.current = results.poseLandmarks
+    })
+    poseInstance.initialize()
+
+    return () => {
+      poseInstance.close()
+    }
+  }, [])
+  const [videoHeight, setVideoHeight] = useState(0)
+  const [videoWidth, setVideoWidth] = useState(0)
+
+  useLayoutEffect(() => {
+    if (webcamRef.current) {
+      const video = webcamRef.current.video
+      setVideoHeight(video.videoHeight / video.height)
+      setVideoWidth(video.videoWidth / video.width)
+    }
+  }, [])
+
   return (
     <div className="Container">
       <Webcam
@@ -104,6 +148,26 @@ export default function WebcamVideo() {
       )}
       {recordedChunks.length > 0 && !capturing && (
         <DownloadButton onClick={handleDownload}>Download</DownloadButton>
+      )}
+      {pose && (
+        <>
+          {pose.landmark.map((landmark, index) => {
+            return (
+              <div
+                key={`landmark-${index}`}
+                style={{
+                  position: 'absolute',
+                  top: `${landmark.y * videoHeight}px`,
+                  left: `${landmark.x * videoWidth}px`,
+                  width: '10px',
+                  height: '10px',
+                  backgroundColor: 'white',
+                  borderRadius: '50%',
+                }}
+              ></div>
+            )
+          })}
+        </>
       )}
     </div>
   )

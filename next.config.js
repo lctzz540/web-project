@@ -10,7 +10,8 @@ const ContentSecurityPolicy = `
   img-src 'self' data:;
   font-src 'self';
   media-src 'self' *.example.com;
-  connect-src 'self' *.example.com;
+  connect-src 'self' *.example.com https://cdn.jsdelivr.net;
+
   frame-src 'self';
   object-src 'none';
   base-uri 'self';
