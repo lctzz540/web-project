@@ -90,6 +90,7 @@ export default function WebcamVideo() {
         height={1280}
         width={720}
         audio={false}
+        mirrored={true}
         ref={webcamRef}
         videoConstraints={videoConstraints}
       />
