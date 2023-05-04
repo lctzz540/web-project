@@ -4,14 +4,12 @@ import ReactPlayer from 'react-player'
 import { useRouter } from 'next/router'
 import exercisesData from '@/data/exercisesData'
 import { useEffect, useState } from 'react'
-import WebcamCapture from '@/components/WebcamCapture'
 import Link from 'next/link'
 
 export default function ExercisePreview() {
   const router = useRouter()
   const { id } = router.query
   const [exercise, setExercise] = useState(null)
-  const [isStart, setIsstart] = useState(false)
 
   useEffect(() => {
     if (!id) return
@@ -37,31 +35,22 @@ export default function ExercisePreview() {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {exercise.title}
           </h1>
-          {!isStart ? (
-            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-              Watch video and then click "Do exercise" to continue
-            </p>
-          ) : (
-            <></>
-          )}
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            Watch video and then click "Do exercise" to continue
+          </p>
+          ) : (<></>
         </div>
         <div className="container py-12">
           <div className="flex  items-center justify-center">
-            {!isStart ? (
-              <>
-                <ReactPlayer url={exercise.video} controls={true} />
-                <Link
-                  className="fixed bottom-10 right-10 m-4 rounded bg-blue-500 p-2 py-2 px-4 font-bold text-white hover:bg-blue-700"
-                  href={'https://pose-dcnv.onrender.com'}
-                >
-                  Do exercise
-                </Link>
-              </>
-            ) : (
-              <>
-                <WebcamCapture />
-              </>
-            )}
+            <>
+              <ReactPlayer url={exercise.video} controls={true} />
+              <Link
+                className="fixed bottom-10 right-10 m-4 rounded bg-blue-500 p-2 py-2 px-4 font-bold text-white hover:bg-blue-700"
+                href={'https://pose-dcnv.onrender.com'}
+              >
+                Do exercise
+              </Link>
+            </>
           </div>
         </div>
       </div>
