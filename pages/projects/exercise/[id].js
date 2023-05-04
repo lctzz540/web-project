@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import exercisesData from '@/data/exercisesData'
 import { useEffect, useState } from 'react'
 import WebcamCapture from '@/components/WebcamCapture'
+import Link from 'next/link'
 
 export default function ExercisePreview() {
   const router = useRouter()
@@ -49,12 +50,12 @@ export default function ExercisePreview() {
             {!isStart ? (
               <>
                 <ReactPlayer url={exercise.video} controls={true} />
-                <button
+                <Link
                   className="fixed bottom-10 right-10 m-4 rounded bg-blue-500 p-2 py-2 px-4 font-bold text-white hover:bg-blue-700"
-                  onClick={() => setIsstart(true)}
+                  href={'https://pose-dcnv.onrender.com'}
                 >
                   Do exercise
-                </button>
+                </Link>
               </>
             ) : (
               <>

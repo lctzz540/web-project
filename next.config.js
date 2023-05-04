@@ -3,22 +3,22 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 // You might need to insert additional domains in script-src if you are using external services
+
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' 'cdn.jsdelivr.net';
   style-src 'self' 'unsafe-inline';
   img-src 'self' data:;
   font-src 'self';
   media-src 'self' *.example.com;
-  connect-src 'self' *.example.com https://cdn.jsdelivr.net;
-
+  connect-src 'self' *.example.com;
   frame-src 'self';
   object-src 'none';
   base-uri 'self';
   form-action 'self';
   frame-ancestors 'none';
-  block-all-mixed-content;`
-
+  block-all-mixed-content;
+`
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {

@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { Pose } from '@mediapipe/pose'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Webcam from 'react-webcam'
 import tw from 'tailwind-styled-components'
 
@@ -14,9 +13,8 @@ const StopButton = tw.button`
 const DownloadButton = tw.button`
   bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded
 `
-
-const ClockText = tw.span`
-  text-4xl font-bold text-white
+const SendButton = tw.button`
+  bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded
 `
 
 export default function WebcamVideo() {
@@ -25,16 +23,6 @@ export default function WebcamVideo() {
   const [capturing, setCapturing] = useState(false)
   const [recordedChunks, setRecordedChunks] = useState([])
   const [recordTime, setRecordTime] = useState(0)
-  const [pose, setPose] = useState(null)
-  const poseRef = useRef(null)
-
-  const onPoseDetection = (results) => {
-    const landmarks = results.poseLandmarks
-
-    if (landmarks) {
-      setPose(landmarks)
-    }
-  }
 
   const handleDataAvailable = useCallback(({ data }) => {
     if (data.size > 0) {
@@ -73,6 +61,27 @@ export default function WebcamVideo() {
     }
   }, [recordedChunks])
 
+  const handleUpload = useCallback(() => {
+    if (recordedChunks.length) {
+      const blob = new Blob(recordedChunks, {
+        type: 'video/mp4',
+      })
+      const formData = new FormData()
+      formData.append('file', blob, 'react-webcam-stream-capture.mp4')
+      fetch('http://localhost:8000/predict', {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => {
+          console.log('Upload success:', response)
+          setRecordedChunks([])
+        })
+        .catch((error) => {
+          console.error('Upload error:', error)
+        })
+    }
+  }, [recordedChunks])
+
   useEffect(() => {
     let interval
     if (capturing) {
@@ -95,39 +104,6 @@ export default function WebcamVideo() {
     facingMode: 'user',
   }
 
-  useEffect(() => {
-    const poseInstance = new Pose({
-      locateFile: (file) => {
-        return `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`
-      },
-    })
-    poseInstance.setOptions({
-      modelComplexity: 1,
-      smoothLandmarks: true,
-      minDetectionConfidence: 0.5,
-      minTrackingConfidence: 0.5,
-    })
-    poseInstance.onResults(onPoseDetection)
-    poseInstance.onResults((results) => {
-      poseRef.current = results.poseLandmarks
-    })
-    poseInstance.initialize()
-
-    return () => {
-      poseInstance.close()
-    }
-  }, [])
-  const [videoHeight, setVideoHeight] = useState(0)
-  const [videoWidth, setVideoWidth] = useState(0)
-
-  useLayoutEffect(() => {
-    if (webcamRef.current) {
-      const video = webcamRef.current.video
-      setVideoHeight(video.videoHeight / video.height)
-      setVideoWidth(video.videoWidth / video.width)
-    }
-  }, [])
-
   return (
     <div className="Container">
       <Webcam
@@ -147,26 +123,9 @@ export default function WebcamVideo() {
         <RecordButton onClick={handleStartCaptureClick}>Start Capture</RecordButton>
       )}
       {recordedChunks.length > 0 && !capturing && (
-        <DownloadButton onClick={handleDownload}>Download</DownloadButton>
-      )}
-      {pose && (
         <>
-          {pose.landmark.map((landmark, index) => {
-            return (
-              <div
-                key={`landmark-${index}`}
-                style={{
-                  position: 'absolute',
-                  top: `${landmark.y * videoHeight}px`,
-                  left: `${landmark.x * videoWidth}px`,
-                  width: '10px',
-                  height: '10px',
-                  backgroundColor: 'white',
-                  borderRadius: '50%',
-                }}
-              ></div>
-            )
-          })}
+          <DownloadButton onClick={handleDownload}>Download</DownloadButton>
+          <SendButton onClick={handleUpload}>Send Video</SendButton>
         </>
       )}
     </div>
